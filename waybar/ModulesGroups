@@ -1,0 +1,181 @@
+/* ==== https://github.com/smidur ==== */
+// Groups Modules //
+
+{
+
+  "group/app_drawer": {
+  	"orientation": "inherit",
+  	"drawer": {
+  		"transition-duration": 499,
+  		"children-class": "custom/menu",
+  		"transition-left-to-right": true
+    },
+  	"modules": [
+  		"custom/menu",
+  		"custom/light_dark",
+  		"custom/file_manager",
+  		"custom/tty",
+  		"custom/browser",
+  		"custom/settings"
+  	]
+  },
+
+  "group/quicklinks": {
+    "orientation": "horizontal",
+    "modules": [
+      "custom/filemanager",
+      "custom/browser",
+      "custom/terminal",
+      "custom/editor",
+      "custom/obsidian"
+    ]
+  },
+
+  "group/mbrd-drawer": {
+  	"orientation": "inherit",
+  	"drawer": {
+  		"transition-duration": 499,
+  		"children-class": "cpu",
+  		"transition-left-to-right": true
+    },
+  	"modules": [
+  		"temperature",
+  		"cpu",
+  		"memory"
+  	]
+  },
+
+  "group/display": {
+    "orientation": "inherit",
+    "drawer": {
+  		"transition-duration": 499,
+  		"children-class": "idle_inhibitor",
+  		"transition-left-to-right": true
+    },
+    "modules": [
+      "idle_inhibitor",
+      "backlight"
+    ]
+  },
+
+  "group/laptop": {
+    "orientation": "inherit",
+    "modules": [
+      "backlight",
+      "battery"
+    ]
+  },
+
+  "group/tray": {
+    "orientation": "inherit",
+    "drawer": {
+  		"transition-duration": 499,
+  		"children-class": "tray",
+  		"transition-left-to-right": true
+    },
+    "modules": [
+      "tray"
+    ]
+  },
+
+  "group/audio": {
+  	"orientation": "inherit",
+  	"drawer": {
+  		"transition-duration": 499,
+  		"children-class": "pulseaudio#microphone",
+  		"transition-left-to-right": true
+    },
+  	"modules": [
+  		"pulseaudio#speaker",
+  		"pulseaudio#microphone"
+  	]
+  },
+
+  "group/connections": {
+  	"orientation": "inherit",
+  	"drawer": {
+  		"transition-duration": 499,
+  		"children-class": "bluetooth",
+  		"transition-left-to-right": false
+    },
+  	"modules": [
+  		"network",
+  		"bluetooth"
+  	]
+  },
+
+  "group/notify": {
+  	"orientation": "inherit",
+  	"drawer": {
+  		"transition-duration": 499,
+  		"children-class": "custom/swaync",
+  		"transition-left-to-right": false
+    },
+  	"modules": [
+  		"custom/swaync"
+  	]
+  },
+
+  "group/misc": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 499,
+      "children-class": "not-misc",
+      "transition-right-to-left": false
+    },
+    "modules": [
+      "custom/misc",
+      "custom/screenrecorder"
+    ]
+  },
+
+  "group/system": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 400,
+      "children-class": "custom/power",
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/power",
+      "custom/lock"
+    //"custom/copyq"
+    ]
+  },
+
+  "group/power": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 400,
+      "children-class": "drawer-child",
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/power",
+      "custom/quit",
+      "custom/lock",
+      "custom/reboot"
+    ]
+  },
+
+  // groups for vertical
+  "group/power#vert": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "not-memory",
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/power",
+      "custom/lock",
+      "custom/logout",
+      "custom/reboot"
+    ]
+  }
+
+}
+
+
+// vim: ft=jsonc
+

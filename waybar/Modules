@@ -1,0 +1,265 @@
+/* ==== https://github.com/smidur ==== */
+/* Waybar Modules */
+
+{
+
+  "clock": {
+    "interval": 1,
+    "format": " {:%H:%M:%S}",
+    "format-alt": " {:L%H:%M   %Y, %B %d, %A}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      //"weeks-pos": "right",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        //"weeks": "<span color='#99ffdd'><b>W{:%V}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-click-forward": "tz_up",
+      "on-click-backward": "tz_down",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
+    }
+  },
+
+  "network": {
+    "max-length": 29,
+    "format": "{ifname}",
+    "format-disconnected": "⚠ 󰌙 ⚠",
+    "format-linked": "󰈁 {ifname} [No IP]",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    "format-ethernet": "{ipaddr}/{cidr} 󰌘",
+    "format-wifi": "{essid} {icon} {signalStrength}%",
+    "tooltip-format": "{essid} {icon} {signalStrength}%",
+    "tooltip-format-wifi": "{ipaddr}  {bandwidthUpBits}  {bandwidthDownBits}",
+    "tooltip-format-ethernet": "{ifname} 󰌘",
+    "tooltip-format-disconnected": "󰌙 Disconnected",
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨" ],
+    "on-click-right": ""
+  },
+
+  "cpu": {
+    "format": " {usage}%"
+  },
+
+  "memory": {
+    "interval": 14,
+    "format": " {}%"
+  },
+
+  "temperature": {
+    "interval": 10,
+    "warning-threshold": 59,
+    "critical-threshold": 80,
+    "format-critical": "󰈸 {temperatureC}°C 󰈸",
+    "format": "{icon}{temperatureC}°C",
+    "format-icons": ["", "", ""]
+  },
+
+  "idle_inhibitor": {
+    "tooltip": true,
+    "tooltip-format-activated": "Idle_inhibitor active",
+    "tooltip-format-deactivated": "Idle_inhibitor not active",
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    }
+  },
+
+  "pulseaudio": {
+    "scroll-step": 2,
+    "format": "{icon} {volume}% {format_source}",
+    "format-bluetooth": "{icon}{volume}% {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": "  {format_source}",
+    "format-source": "󰍬{volume}%",
+    "format-source-muted": "󰍭",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", "󰕾", ""]
+    },
+    "smooth-scrolling-threshold": 1,
+    "tooltip": true,
+    "tooltip-format": "{icon} {desc} | {volume}%",
+    "on-click": "pavucontrol",
+    "on-click-right": "pamixer --toggle-mute"
+  },
+
+  "pulseaudio#speaker": {
+    "scroll-step": 1,
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon}{volume}%",
+    "format-bluetooth-muted": "{icon} ",
+    "format-muted": " ",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", "󰕾", ""]
+    },
+    "smooth-scrolling-threshold": 1,
+    "tooltip": true,
+    "tooltip-format": "{icon} {desc} | {volume}%",
+    "on-click": "pavucontrol",
+    "on-click-right": "pamixer --toggle-mute"
+  },
+
+  "pulseaudio#microphone": {
+    "scroll-step": 1,
+    "format": "{format_source}",
+    "format-source": " {volume}%",
+    "format-source-muted": " ",
+    "on-click": "$HOME/.config/hypr/scripts/Volume.sh --toggle-mic",
+    "on-click-right": "pavucontrol -t 4",
+    "on-scroll-up": "$HOME/.config/hypr/scripts/Volume.sh --mic-inc",
+    "on-scroll-down": "$HOME/.config/hypr/scripts/Volume.sh --mic-dec",
+    "tooltip-format": "{source_desc} | {source_volume}%"
+  },
+
+  "wireplumber": {
+    "format": "{icon} {volume} %",
+    "format-muted": " Mute",
+    "on-click": "$HOME/.config/hypr/scripts/Volume.sh --toggle",
+    "on-click-right": "pavucontrol -t 3",
+    "on-scroll-up": "$HOME/.config/hypr/scripts/Volume.sh --inc",
+    "on-scroll-down": "$HOME/.config/hypr/scripts/Volume.sh --dec",
+    "format-icons": ["", "", "󰕾", ""]
+  },
+
+  "bluetooth": {
+    "format": "󰂯",
+    "format-disabled": "󰂳",
+    "format-connected": "󰂱 {num_connections}",
+    "tooltip-format": "󰂯 {device_alias}",
+    "tooltip-format-connected": "{device_enumerate}",
+    "tooltip-format-enumerate-connected": "󰂯 {device_alias} 󰂄{device_battery_percentage}%",
+    "tooltip": true,
+    "on-click": "blueman-manager"
+  },
+
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": ""
+    }
+  },
+
+  "battery": {
+    "states": {
+      "good": 72,
+      "warning": 29,
+      "critical": 22
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": "󱐥 {capacity}%",
+    "format-full": "{icon} {capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-icons": {
+      "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+      "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
+    }
+  },
+
+  "backlight": {
+    "interval": 2,
+    "format": "{icon}",
+    "format-alt": "{icon}{percent}%",
+    "format-icons": ["🌑", "🌘", "🌗", "🌖", "🌕"]
+  },
+
+  "wlr/taskbar": {
+    "format": "{icon} {name}",
+    "icon-size": 14,
+    "all-outputs": false,
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": [
+      "wofi",
+      "rofi",
+      "kitty",
+      "kitty-dropterm",
+      "foot"
+      ]
+  },
+
+  "tray": {
+    "spacing": 4,
+    "icon-size": 14,
+    "icons": {
+      "blueman": "bluetooth"
+    }
+  },
+
+  "keyboard-state": {
+    "numlock": true,
+    "capslock": true,
+    "format": { 
+      "numlock": "󰰒 {icon}",
+      "capslock": "󰯱 {icon}"
+    },
+    "format-icons": {
+      "locked": "",
+      "unlocked": ""
+    }
+  },
+  
+  "mpris": {
+    "interval": 10,
+    "format": "{player_icon} ",
+    "format-paused": "{status_icon} <i>{dynamic}</i>",
+    "on-click-middle": "playerctl play-pause",
+    "on-click": "playerctl previous",
+    "on-click-right": "playerctl next",
+    "scroll-step": 5.0,
+    "on-scroll-up": "$HOME/.config/hypr/scripts/Volume.sh --inc",
+    "on-scroll-down": "$HOME/.config/hypr/scripts/Volume.sh --dec",
+    "smooth-scrolling-threshold": 1,
+    "tooltip": true,
+    "tooltip-format": "{status_icon} {dynamic}\nLeft Click: previous\nMid Click: Pause\nRight Click: Next",
+    "player-icons": {
+      "chromium": "",
+      "default": "",
+      "firefox": "",
+      "kdeconnect": "",
+      "mopidy": "",
+      "mpv": "󰐹",
+      "spotify": "",
+      "vlc": "󰕼"
+    },
+    "status-icons": {
+      "paused": "󰐎",
+      "playing": "",
+      "stopped": ""
+    },
+    // "ignored-players": ["firefox"]
+    "max-length": 40
+  }
+}
+
+
+// vim: ft=jsonc
+

@@ -1,0 +1,94 @@
+/* ==== https://github.com/smidur ==== */
+
+* {
+  font-family: "Terminus, Iosevka NF, Hack Nerd Font, Symbols Nerd Font Mono, Roboto Mono Nerd Font";
+  font-size: 24pt;
+
+  background-color: rgba(4, 4, 4, 0.7);
+  background-repeat: no-repeat;
+  background-size: 77%;
+
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+window {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+button {
+  padding-top: 299px;
+  background-position: center;
+  border-color: transparent;
+  background-color: rgba(44, 44, 44, 0.7);
+  background-position: center;
+  color: #777777;  /* 008080 = teal color */
+}
+
+
+#lock {
+  background-image: image(url("./icons/lock-0.svg"));
+}
+
+#logout {
+  background-image: image(url("./icons/logout-0.svg"));
+}
+
+#suspend {
+  background-image: image(url("./icons/suspend-0.svg"));
+}
+
+#hibernate {
+  background-image: image(url("./icons/hibernate-0.svg"));
+}
+
+#shutdown {
+  background-image: image(url("./icons/poweroff-0.svg"));
+}
+
+#reboot {
+  background-image: image(url("./icons/reboot-0.svg"));
+}
+
+
+#lock:focus,
+#lock:hover {
+    background-image: image(url("./icons/lock-1.svg"));
+}
+
+#logout:focus,
+#logout:hover {
+    background-image: image(url("./icons/logout-1.svg"));
+}
+
+#suspend:focus,
+#suspend:hover {
+    background-image: image(url("./icons/suspend-1.svg"));
+}
+
+#hibernate:focus,
+#hibernate:hover {
+    background-image: image(url("./icons/hibernate-1.svg"));
+}
+
+#shutdown:focus,
+#shutdown:hover {
+    background-image: image(url("./icons/poweroff-1.svg"));
+}
+
+#reboot:focus,
+#reboot:hover {
+    background-image: image(url("./icons/reboot-1.svg"));
+}
+
+
+/*
+vim: ft=less
+*/

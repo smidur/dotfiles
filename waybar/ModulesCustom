@@ -1,0 +1,154 @@
+/* ==== https://github.com/smidur ==== */
+/* Waybar Custom made modules */
+
+{
+
+  "custom/power": {
+    "format": "󰐥",
+    "tooltip": false,
+    "on-click": "wlogout -p layer-shell"
+  },
+
+  "custom/lock": {
+    "format": "󰍁",
+    "tooltip": "true",
+    "tooltip-format": " ScreenLock",
+    "on-click": "swaylock"
+  },
+
+  "custom/clipboard": {
+    "format": "📋",
+    "return-type": "json",
+    "exec": "printf '{\"tooltip\":\"%s items in history\", \"class\":\"%s\"}' \"$(cliphist list | wc -l)\" \"$(cliphist list | wc -l)\"",
+    "on-click": "clipmenu",
+    "signal": 9
+  },
+
+  "custom/swaync": {
+    "tooltip": true,
+    "tooltip-format": "Left Click: Launch Notification Center\nRight Click: Do not Disturb",
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+
+  "custom/playerctl": {
+    "format": "<span>{}</span>",
+    "return-type": "json",
+    "max-length": 49,
+    "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}}  {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}}:[{{markup_escape(title)}}]\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "on-click-middle": "playerctl previous",
+    "scroll-step": 4.0,
+    "on-scroll-up": "$HOME/.config/hypr/scripts/Volume.sh --inc",
+    "on-scroll-down": "$HOME/.config/hypr/scripts/Volume.sh --dec",
+    "smooth-scrolling-threshold": 1
+  },
+
+  "custom/grimpicker": {
+    "format": "",
+    "on-click": "grimpicker -cn",
+    "tooltip": true,
+    "tooltip-format": "Color Picker"
+  },
+
+  "custom/keyboard": {
+    "exec": "$HOME/.config/hypr/scripts/KeyboardLayout.sh status",
+    "interval": 1,
+    "format": " {}",
+    "on-click": "$HOME/.config/hypr/scripts/KeyboardLayout.sh switch"
+  },
+
+  "custom/appmenu": {
+    "format": "APPS",
+    "on-click": "~/.config/nwg-panel/nwg_menu_launcher.sh",
+    "on-click-right": "rofi -show drun -replace",
+    "tooltip": false
+  },
+
+  "custom/copyq": {
+    "format": "󰅍",
+    "on-click": "copyq toggle",
+    "tooltip": false
+  },
+
+  "custom/misc": {
+    "format": " ",
+    "tooltip": false
+  },
+
+  "custom/filemanager": {
+    "format": " ",
+    "on-click": "foot yazi",
+    "tooltip": false
+  },
+
+  "custom/terminal": {
+    "format": " ",
+    "on-click": "foot",
+    "tooltip": false
+  },
+
+  "custom/editor": {
+    "format": "",
+    "on-click": "foot vim",
+    "tooltip": false
+  },
+
+  "custom/browser": {
+    "format": " ",
+    "on-click": "firefox",
+    "tooltip": false
+  },
+
+  // Separators
+  "custom/separator": {
+    "format": "|",
+    "interval": "once",
+    "tooltip": false
+  },
+
+  "custom/sep-sq-open": {
+    "format": "[",
+    "interval": "once",
+    "tooltip": false
+  },
+
+  "custom/sep-sq-close": {
+    "format": "]",
+    "interval": "once",
+    "tooltip": false
+  },
+
+  "custom/sep-rnd-open": {
+    "format": "(",
+    "interval": "once",
+    "tooltip": false
+  },
+
+  "custom/sep-rnd-close": {
+    "format": ")",
+    "interval": "once",
+    "tooltip": false
+  }
+
+}
+
+
+// vim: ft=jsonc
+

@@ -1,0 +1,100 @@
+/* ----  https://github.com/smidur  ---- */
+
+// ### DEFAULT Laptop  - Top ### //
+[
+  {
+    "include": [
+      "$HOME/.config/waybar/Modules",
+      "$HOME/.config/waybar/ModulesSway",
+      "$HOME/.config/waybar/ModulesCustom",
+      "$HOME/.config/waybar/ModulesGroups"
+    ],
+
+    "height": 19,
+    "layer": "overlay",
+    "position": "top",
+    //"mode": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "spacing": 1,
+    "fixed-center": true,
+    "ipc": true,
+    "margin-top": 2,
+    "margin-bottom": 0,
+    "margin-left": 4,
+    "margin-right": 4,
+    "swap-icon-label": false,
+
+    "modules-left": [
+      "custom/separator",
+
+      "sway/language",
+      "custom/separator",
+
+      "sway/workspaces",
+      "custom/separator",
+
+      "sway/mode",
+      "custom/separator",
+
+      "custom/playerctl"
+    ],
+
+    "modules-center": [
+      "clock"
+    ],
+
+    "modules-right": [
+      "group/connections",
+      "custom/separator",
+
+      "idle_inhibitor",
+      "custom/separator",
+
+      "group/audio",
+      "custom/separator",
+
+      "backlight",
+      "custom/separator",
+
+      "group/mbrd-drawer",
+      "custom/separator",
+
+      //"custom/nightlight",
+      //"custom/separator",
+
+      "battery",
+      "custom/separator",
+
+      "custom/swaync",
+      "custom/separator",
+
+      "group/system"
+    ]
+  }
+
+//  {
+//  "include": [
+//      "$HOME/.config/waybar/Modules",
+//      "$HOME/.config/waybar/ModulesSway",
+//      "$HOME/.config/waybar/ModulesCustom",
+//      "$HOME/.config/waybar/ModulesGroups"
+//  ],
+//
+//  "layer": "top",
+//  "position": "right",
+//  "mode": "dock",
+//  "exclusive": true,
+//  "passthrough": false,
+//  "spacing": 2,
+//  "fixed-center": true,
+//  "ipc": true,
+//  "margin-top": 2,
+//  "margin-left": 4,
+//  "margin-right": 4
+//
+//  }
+
+]
+
+

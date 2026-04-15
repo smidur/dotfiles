@@ -1,0 +1,36 @@
+#### from https://github.com/anufrievroman/
+#### THEME NAME: WHALE
+# the real filetype is dosini, 
+# but ft=css used for colors
+# vim: ft=css
+
+#Back  #1a1e2a #1a1e2a
+#Front #ffffff #ffffff
+#Dark  #242D42 #242D42
+#Dark  #212739 #212739
+#Blue  #5eadfc #5eadfc
+#Grey  #6a6f87 #6a6f87
+#Pink  #fa5ead #fa5ead
+#Green #00fbad #00fbad
+
+
+[colors]
+foreground=  ffffff
+background=  1a1e2a
+regular0=    1d2430
+regular1=    fa5ead
+regular2=    00fbad
+regular3=    ffdf5f
+regular4=    5eadfc
+regular5=    fa5ead
+regular6=    242D42
+regular7=    ffffff
+bright0=     1d2430
+bright1=     fa5ead
+bright2=     00fbad
+bright3=     ffdf5f
+bright4=     5eadfc
+bright5=     fa5ead
+bright6=     6a6f87
+bright7=     eff1f5
+

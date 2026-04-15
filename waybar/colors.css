@@ -1,0 +1,204 @@
+/*
+---- https://github.com/smidur ----
+vim: ft=css
+*/
+
+/* RED COLORS */
+/* COLOR NAME 	                HEX CODE 	    RGB CODE */
+@define-color BloodNight        #551606;  /*  rgb(85, 22, 6)  */
+@define-color BlackBean         #3D0C02;  /*  rgb(61, 12, 2)  */
+@define-color DarkScarlet       #560319;  /*  rgb(86, 3, 25)  */
+@define-color RedBlood          #660000;  /*  rgb(102, 0, 0)  */
+@define-color BloodRed          #7E3517;  /*  rgb(126, 53, 23)  */
+@define-color Vermilion         #7E191B;  /*  rgb(126, 25, 27)  */
+@define-color DeepRed           #800517;  /*  rgb(128, 5, 23)  */
+@define-color DarkRed           #8B0000;  /*  rgb(139, 0, 0)  */
+@define-color Burgundy          #8C001A;  /*  rgb(140, 0, 26)  */
+@define-color SaffronRed        #931314;  /*  rgb(147, 19, 20)  */
+@define-color CrimsonRed        #990000;  /*  rgb(153, 0, 0)  */
+@define-color Cranberry         #9F000F;  /*  rgb(159, 0, 15)  */
+@define-color CarbonRed         #A70D2A;  /*  rgb(167, 13, 42)  */
+@define-color Brown             #A52A2A;  /*  rgb(165, 42, 42)  */
+@define-color FireBrick         #B22222;  /*  rgb(178, 34, 34)  */
+@define-color TomatoSauce       #B21807;  /*  rgb(178, 24, 7)  */
+@define-color ChilliPepper      #C11B17;  /*  rgb(193, 27, 23)  */
+@define-color LoveRed           #E41B17;  /*  rgb(228, 27, 23)  */
+@define-color LavaRed           #E42217;  /*  rgb(228, 34, 23)  */
+@define-color ImperialRed       #ED2939;  /*  rgb(237, 41, 57)  */
+@define-color TractorRed        #FD0E35;  /*  rgb(253, 14, 53)  */
+@define-color RubyRed           #F62217;  /*  rgb(246, 34, 23)  */
+@define-color FireEngineRed     #F62817;  /*  rgb(246, 40, 23)  */
+@define-color FerrariRed        #F70D1A;  /*  rgb(247, 13, 26)  */
+@define-color NeonRed           #FD1C03;  /*  rgb(253, 28, 3)  */
+@define-color ScarletRed        #FF2400;  /*  rgb(255, 36, 0)  */
+@define-color CoralRed          #FF4040;  /*  rgb(255, 64, 64)  */
+@define-color RedOrange         #FF5349;  /*  rgb(255, 83, 73)  */
+@define-color Grapefruit        #DC381F;  /*  rgb(220, 56, 31)  */
+@define-color RustyRed          #DA2C43;  /*  rgb(218, 44, 67)  */
+@define-color Jasper            #D73B3E;  /*  rgb(215, 59, 62)  */
+@define-color CherryRed         #C24641;  /*  rgb(194, 70, 65)  */
+@define-color ChestnutRed       #C34A2C;  /*  rgb(195, 74, 44)  */
+@define-color RedFox            #C35817;  /*  rgb(195, 88, 23)  */
+@define-color CopperRed         #CB6D51;  /*  rgb(203, 109, 81)  */
+@define-color ShockingOrange    #E55B3C;  /*  rgb(229, 91, 60)  */
+@define-color RedGold           #EB5406;  /*  rgb(235, 84, 6)  */
+@define-color Tomato            #FF6347;  /*  rgb(255, 99, 71)  */
+@define-color SunsetOrange      #FD5E53;  /*  rgb(253, 94, 83)  */
+@define-color PastelRed         #FF6961;  /*  rgb(255, 105, 97)  */
+@define-color Bittersweet       #FE6F5E;  /*  rgb(254, 111, 94)  */
+@define-color Salmon            #FA8072;  /*  rgb(250, 128, 114)  */
+@define-color ValentineRed      #E55451;  /*  rgb(229, 84, 81)  */
+@define-color PinkCoral         #E77471;  /*  rgb(231, 116, 113)  */
+@define-color LightCoral        #F08080;  /*  rgb(240, 128, 128)  */
+@define-color BrinkPink         #F67280;  /*  rgb(246, 114, 128)  */
+@define-color BlushRed          #E56E94;  /*  rgb(229, 110, 148)  */
+@define-color PaleViolet        #DB7093;  /*  rgb(219, 112, 147)  */
+@define-color MediumViolet      #C71585;  /*  rgb(199, 21, 133)  */
+@define-color VioletRed         #F6358A;  /*  rgb(246, 53, 138)  */
+@define-color BrickRed          #CB4154;  /*  rgb(203,65,84)  */
+@define-color BrightMaroon      #C32148;  /*  rgb(195, 33, 72)  */
+@define-color RoseRed           #C21E56;  /*  rgb(194, 30, 86)  */
+@define-color Popstar           #BE4F62;  /*  rgb(190,79,98)  */
+@define-color Redwood           #A45A52;  /*  rgb(164,90,82)  */
+@define-color TuscanRed         #7C4848;  /*  rgb(124,72,72)  */
+@define-color Cordovan          #893F45;  /*  rgb(137,63,69)  */
+@define-color EnglishRed        #AB4B52;  /*  rgb(171,75,82)  */
+@define-color JapaneseCarmine   #9D2933;  /*  rgb(157,41,51)  */
+@define-color PaleCarmine       #AF4035;  /*  rgb(175,64,53)  */
+@define-color IndianRed         #CD5C5C;  /*  rgb(205, 92, 92)  */
+@define-color TangoPink         #E4717A;  /*  rgb(228,113,122)  */
+@define-color RedPink           #FA2A55;  /*  rgb(250, 42, 85)  */
+@define-color RadicalRed        #FF355E;  /*  rgb(255, 53, 94)  */
+@define-color LightRed          #FFCCCB;  /*  rgb(255, 204, 203)  */
+@define-color RedWhite          #F3E8EA;  /*  rgb(243, 232, 234)  */
+
+/* GREEN COLORS */
+/* Color Name                     Hex Code       RGB Code  */
+@define-color DarkJungle          #1A2421;  /*  rgb(26, 36, 33)  */
+@define-color MediumJungle        #1C352D;  /*  rgb(28, 53, 45)  */
+@define-color SacramentoGreen     #043927;  /*  rgb(4, 57, 39)  */
+@define-color ForestGreen         #0B6623;  /*  rgb(11, 102, 35)  */
+@define-color HunterGreen         #3F704D;  /*  rgb(63, 112, 77)  */
+@define-color CamouflageGreen     #78866B;  /*  rgb(120, 134, 107)  */
+@define-color Feldgrau            #4D5D53;  /*  rgb(77, 93, 83)  */
+@define-color ArmyGreen           #4B5320;  /*  rgb(75, 83, 32)  */
+@define-color DarkMossGreen       #4A5D23;  /*  rgb(74, 93, 35)  */
+@define-color Olive               #708238;  /*  rgb(112, 130, 56)  */
+@define-color OliveDrab           #BAB86C;  /*  rgb(186, 184, 108)  */
+@define-color YellowGreenOlive    #9B9A4A;  /*  rgb(155, 154, 74)  */
+@define-color OliveBrown          #645A21;  /*  rgb(100, 90, 33)  */
+@define-color Avocado             #568203;  /*  rgb(86, 130, 3)  */
+@define-color Asparagus           #87A96B;  /*  rgb(135, 169, 107)  */
+@define-color DollarBill          #85BB65;  /*  rgb(133, 187, 101)  */
+@define-color SageGreen           #9DC183;  /*  rgb(157, 193, 131)  */
+@define-color DarkArtichoke       #4B6F44;  /*  rgb(75, 111, 68)  */
+@define-color FernGreen           #4F7942;  /*  rgb(79, 121, 66)  */
+@define-color Verdun              #487800;  /*  rgb(72, 120, 0)  */
+@define-color RussianGreen        #679267;  /*  rgb(103, 146, 103)  */
+@define-color Viridian            #609078;  /*  rgb(96, 144, 120)  */
+@define-color ResedaGreen         #6C7C59;  /*  rgb(108, 124, 89)  */
+@define-color ArtichokeGreen      #8F9779;  /*  rgb(143, 151, 121)  */
+@define-color LaurelGreen         #A9BA9D;  /*  rgb(169, 186, 157)  */
+@define-color Swamp               #A8C090;  /*  rgb(168, 192, 144)  */
+@define-color Gin                 #D8E4BC;  /*  rgb(216, 228, 188)  */
+@define-color Chetwode            #F0FFF0;  /*  rgb(240, 255, 240)  */
+@define-color GrannySmithApple    #A8E4A0;  /*  rgb(168, 228, 160)  */
+@define-color Mantis              #74C365;  /*  rgb(116, 195, 101)  */
+@define-color Chateau             #48A860;  /*  rgb(72, 168, 96)  */
+@define-color Inchworm            #B2EC5D;  /*  rgb(178, 236, 93)  */
+@define-color KellyGreen          #4CBB17;  /*  rgb(76, 187, 23)  */
+@define-color IndiaGreen          #138808;  /*  rgb(19, 136, 8)  */
+@define-color NapierGreen         #2A8000;  /*  rgb(42, 128, 0)  */
+@define-color PakistanGreen       #006600;  /*  rgb(0, 102, 0)  */
+@define-color DeepJungle          #004B49;  /*  rgb(0, 75, 73)  */
+@define-color CastletonGreen      #00563B;  /*  rgb(0, 86, 59)  */
+@define-color CadmiumGreen        #006B3C;  /*  rgb(0, 107, 60)  */
+@define-color BottleGreen         #006A4E;  /*  rgb(0, 106, 78)  */
+@define-color Amazon              #3B7A57;  /*  rgb(59, 122, 87)  */
+@define-color SeaGreen            #2E8B57;  /*  rgb(46, 139, 87)  */
+@define-color TropicalRainforest  #00755E;  /*  rgb(0, 117, 94)  */
+@define-color PineGreen           #01796F;  /*  rgb(1, 121, 111)  */
+@define-color MyrtleGreen         #317873;  /*  rgb(49, 120, 115)  */
+@define-color PersianGreen        #00A693;  /*  rgb(0, 166, 147)  */
+@define-color JungleGreen         #29AB87;  /*  rgb(41, 171, 135)  */
+@define-color ShamrockGreen       #009E60;  /*  rgb(0, 158, 96)  */
+@define-color JadeGreen           #00A86B;  /*  rgb(0, 168, 107)  */
+@define-color ParisGreen          #50C878;  /*  rgb(80, 200, 120)  */
+@define-color EmeraldGreen        #50C878;  /*  rgb(80, 200, 120)  */
+@define-color Celadon             #ACE1AF;  /*  rgb(172, 225, 175)  */
+@define-color MintGreen           #98FB98;  /*  rgb(152, 251, 152)  */
+@define-color Harlequin           #3FFF00;  /*  rgb(63, 255, 0)  */
+@define-color NeonGreen           #39FF14;  /*  rgb(57, 255, 20)  */
+@define-color Spring              #00F0A8;  /*  rgb(0, 240, 168)  */
+@define-color BrightMint          #4FFFB0;  /*  rgb(79, 255, 176)  */
+@define-color Pear                #D1E231;  /*  rgb(209, 226, 49)  */
+@define-color LimeGreen           #32CD32;  /*  rgb(199, 234, 70)  */
+@define-color GreenYellow         #ADFF2F;  /*  rgb(173, 255, 47)  */
+@define-color BitterLime          #BFFF00;  /*  rgb(191, 255, 0)  */
+
+
+/* DIFFERENT COLOR FITTING PALETTES */
+
+/* Burgundy, Orange, Yellow And Blue Palette = BYOB
+#800020	#C74D2E	#F4CA7D	#1B234C	#425B96
+*/
+@define-color BYOB0 #800020;
+@define-color BYOB1 #C74D2E;
+@define-color BYOB2 #F4CA7D;
+@define-color BYOB3 #1B234C;
+@define-color BYOB4 #425B96;
+
+/* Teal And Burgundy Color Palette
+#53061E;	#800020	#D39561	#117A86	#3FA3B9
+*/
+@define-color TB0 #53061E;
+@define-color TB1 #800020;
+@define-color TB2 #D39561;
+@define-color TB3 #117A86;
+@define-color TB4 #3FA3B9;
+
+/* Green and Blue combination
+#113E14;	#1A5B07	#2C5C99	#3666DC	#99B7F0
+*/
+@define-color GB0 #113E14;
+@define-color GB1 #1A5B07;
+@define-color GB2 #2C5C99;
+@define-color GB3 #3666DC;
+@define-color GB4 #99B7F0;
+
+/* dark forest green
+#042514;	#0E361C	#19541F	#446C48	#7C9060
+*/
+@define-color DF0 #042514;
+@define-color DF1 #0E361C;
+@define-color DF2 #19541F;
+@define-color DF3 #446C48;
+@define-color DF4 #7C9060;
+
+/* MY COLORS */
+@define-color Cyprus            #004040;  /* rgb(0, 64, 64) */
+@define-color Teal              #008080;  /* rgb(0,128,128) */
+@define-color RobinsEggBlue     #00CCCC;  /* rgb(0,204,204) */
+@define-color CrimsonRed        #990000;  /* rgb(153,0,0) */
+@define-color DarkOrange        #994819;  /* rgb(153,72,25) */
+@define-color JapaneseYellow    #FFA400;  /* rgb(255,164,0) */
+@define-color RedOrange         #C74D2E;  /* rgb(199,77,46) */
+@define-color SoftYellow        #F4CA7D;  /* rgb(244,202,125) */
+@define-color ChineseBlack      #111111;  /* rgb(17,17,17) */
+@define-color EerieBlack        #222222;  /* rgb(34,34,34) */
+@define-color VampireBlack      #070707;  /* rgb(7,7,7) */
+@define-color WhiteSmoke        #F0F0F0;  /* rgb(240,240,240) */
+@define-color DarkJungle        #1A2421;  /* rgb(26, 36, 33) */
+@define-color DeepJungle        #004B49;  /* rgb(0, 75, 73) */
+@define-color PersianGreen      #00A693;  /* rgb(0, 166, 147) */
+@define-color RoyalBlue         #3666DC;  /* rgb(54,102,220) */
+@define-color ModerateCyan      #3FA3B9;  /* rgb(63,163,185) */
+@define-color Olive             #708238;  /* rgb(112, 130, 56) */
+@define-color GreenYellow       #ADFF2F;  /* rgb(173, 255, 47) */
+@define-color BitterLime        #BFFF00;  /* rgb(191, 255, 0) */
+@define-color Bordeaux          #7B1B38;  /* rgb(123,27,56) */
+
+@define-color Urgent            @CrimsonRed;
+@define-color Critical          @CrimsonRed;
+@define-color Charging          @PersianGreen;
+@define-color Warning           @JapaneseYellow;

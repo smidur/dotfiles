@@ -1,0 +1,45 @@
+/*
+==== https://github.com/smidur ====
+*/
+
+/* MY COLORS */
+@define-color BlackLimeGreen    #041608;  /* rgb(4, 22, 8) */
+@define-color DarkJungle        #1A2421;  /* rgb(26, 36, 33) */
+@define-color PhthaloGreen      #173521;  /* rgb(23, 53, 33) */
+@define-color GreyishCyanLime   #2D4433;  /* rgb(45, 68, 51) */
+@define-color Cyprus            #004040;  /* rgb(0, 64, 64) */
+@define-color DeepJungle        #004B49;  /* rgb(0, 75, 73) */
+@define-color Teal              #008080;  /* rgb(0, 128, 128) */
+@define-color PersianGreen      #00A694;  /* rgb(0, 166, 148) */
+@define-color Greenery          #2B8F47;  /* rgb(43, 143, 71) */
+@define-color MambaGreen        #3BAD5D;  /* rgb(59, 173, 93) */
+@define-color MediumAquamarine  #66DDAA;  /* rgb(102, 205, 170) */
+@define-color LightGreen        #7FFA95;  /* rgb(127, 250, 149) */
+@define-color GreenYellow       #ADFF2F;  /* rgb(173, 255, 47) */
+@define-color BitterLime        #BFFF00;  /* rgb(191, 255, 0) */
+@define-color Olive             #708238;  /* rgb(112, 130, 56) */
+@define-color RobinEggBlue      #00CCCC;  /* rgb(0, 204, 204) */
+@define-color ModerateCyan      #3FA3B9;  /* rgb(63, 163, 185) */
+@define-color RoyalBlue         #3666DC;  /* rgb(54, 102, 220) */
+@define-color Red               #FF0000;  /* rgb(255, 0, 0) */
+@define-color CrimsonRed        #990000;  /* rgb(153, 0, 0) */
+@define-color DarkOrange        #994819;  /* rgb(153, 72, 25) */
+@define-color JapaneseYellow    #FFA400;  /* rgb(255, 164, 0) */
+@define-color RedOrange         #C74D2E;  /* rgb(199, 77, 46) */
+@define-color SoftYellow        #F4CA7D;  /* rgb(244, 202, 125) */
+@define-color ChineseBlack      #111111;  /* rgb(17, 17, 17) */
+@define-color EerieBlack        #222222;  /* rgb(34, 34, 34) */
+@define-color VampireBlack      #070707;  /* rgb(7, 7, 7) */
+@define-color WhiteSmoke        #F0F0F0;  /* rgb(240, 240, 240) */
+@define-color Bordeaux          #7B1B38;  /* rgb(123, 27, 56) */
+
+
+@define-color Urgent            @CrimsonRed;
+@define-color Critical          @Red;
+@define-color Charging          @Teal;
+@define-color Warning           @JapaneseYellow;
+
+
+/*
+vim: ft=less
+*/

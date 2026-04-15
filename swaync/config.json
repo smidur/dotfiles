@@ -1,0 +1,120 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+
+  "positionX": "right",
+  "positionY": "top",
+  "layer": "overlay",
+  "cssPriority": "user",
+
+  "control-center-positionX": "right",
+  "control-center-positionY": "top",
+  "control-center-width": 449,
+  "control-center-height": 924,
+  "control-center-margin-top": 4,
+  "control-center-margin-bottom": 0,
+  "control-center-margin-left": 0,
+  "control-center-margin-right": 0,
+
+  "notification-body-image-height": 100,
+  "notification-body-image-width": 100,
+  "notification-window-width": 299,
+  "notification-icon-size": 24,
+  "notification-inline-replies": false,
+  "notification-2fa-action": true,
+
+  "timeout": 7,
+  "timeout-low": 4,
+  "timeout-critical": 0,
+
+  "transition-time": 200,
+  "hide-on-clear": false,
+  "hide-on-action": true,
+  "image-visibility": "when-available",
+
+  "layer-shell": true,
+  "fit-to-screen": false,
+  "keyboard-shortcuts": true,
+  "script-fail-notify": true,
+
+  "notification-visibility": {
+    "example-name": {
+      "state": "muted",
+      "urgency": "Normal",
+      "app-name": "AyuGram"
+    }
+  },
+
+  "widgets": [
+    "dnd",
+    "buttons-grid",
+    "backlight",
+    "mpris",
+    "volume", 
+    "title",
+    "notifications"
+  ],
+  "widget-config": {
+    "title": {
+      "text": "Notifications",
+      "clear-all-button": true,
+      "button-text": "󰎟 Clear"
+    },
+    "dnd": {
+      "text": "Do Not Disturb"
+    },
+    "label": {
+      "max-lines": 1,
+      "text": "Notification"
+    },
+    "mpris": {
+      "loop-carousel": true,
+      "blacklist": []
+    },
+    "volume": {
+      "label": "󰕾",
+      "show-per-app-label": false,
+      "show-per-app-icon": true,
+      "show-per-app": true,
+      "collapse-button-label": "󰞕",
+      "expand-button-label": "󰞖"
+    },
+    "backlight": {
+      "label": "󰃟",
+      "device": "amdgpu_bl1",
+      "subsystem": "backlight",
+      "min": 10,
+      "max": 100
+    },
+    "buttons-grid": {
+      "actions": [
+        {
+          "label": "",
+          "command": "bash -c /opt/smidr_scripts/swaync_restart.sh"
+        },
+        {
+          "label": "󰀝",
+          "type": "toggle",
+          "command": "bash -c $HOME/.config/hypr/scripts/AirplaneMode.sh"
+        },
+        {
+          "label": "󰝟",
+          "type": "toggle",
+          "command": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+        },
+        {
+          "label": "󰍭",
+          "type": "toggle",
+          "command": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+        },
+        {
+          "label": "󰂯",
+          "command": "blueman-manager"
+        },
+        {
+          "label": "",
+          "command": "camtoggle"
+        }
+      ]
+    }
+  }
+}

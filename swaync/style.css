@@ -1,0 +1,152 @@
+/* ==== https://github.com/smidur ==== */
+/* SwayNotificationCenter / swaync theme */
+
+@import url('colors-theme.css');
+
+@define-color noti_bg @VampireBlack;
+@define-color noti_text @MediumAquamarine;
+@define-color noti_btn_bg @EerieBlack;
+@define-color noti_btn_fg @MediumAquamarine;
+@define-color noti_btn_close_bg @MediumAquamarine;
+@define-color noti_btn_close_fg @EerieBlack;
+@define-color noti_btn_hover_bg @MediumAquamarine;
+@define-color noti_btn_hover_fg @EerieBlack;
+@define-color noti_slider_bg @EerieBlack;
+@define-color noti_slider_fg @MediumAquamarine;
+
+* {
+  font-family: "InterVariable, Iosevka";
+  font-weight: bolder;
+  border-radius: 0;
+  border: none;
+}
+
+.control-center {
+  background: @noti_bg;
+  opacity: 0.9;
+  border-radius: 4%;
+}
+
+/* whole screen, except swaync window */
+blankwindow {
+  background: transparent;
+}
+
+/* "column" where notifications appear */
+notificationwindow {
+  background: transparent;
+}
+
+/* corner of the notifications "column" */
+.notification-row {
+  background: transparent;
+}
+/* message-bubble background */
+.notification-background {
+}
+/* message-bubble inside bg */
+.notification-content {
+}
+/* border of message-bubble */
+.notification {
+}
+
+.notification-row .notification-background .notification.low {
+  /* Low Priority Notification */
+}
+
+.notification-row .notification-background .notification.normal {
+  /* Normal Priority Notification */
+}
+
+.notification-row .notification-background .notification.critical {
+  /* Critical Priority Notification */
+}
+
+
+
+.close_button {
+  background: @noti_btn_close_bg;
+  color: @noti_btn_close_fg;
+}
+
+.close_button:hover {
+  background: @noti_btn_hover_bg;
+  color: @noti_btn_hover_fg;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Buttons */
+button {
+    background-color: @noti_btn_bg;
+    color: @noti_btn_fg;
+    border: none;
+}
+
+button:hover,
+button:active,
+button:checked,
+button:focus {
+    background-color: @noti_btn_hover_bg;
+    color: @noti_btn_hover_fg;
+}
+
+/* Slider / progress bars */
+scale trough,
+progressbar trough {
+    background-color: @noti_slider_bg;
+}
+
+scale highlight,
+scale slider,
+progressbar progress {
+    background-color: @noti_slider_fg;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

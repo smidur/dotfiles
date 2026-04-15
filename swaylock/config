@@ -1,0 +1,88 @@
+# general config
+daemonize
+fade-in=0.2
+grace=0.2
+grace-no-mouse
+grace-no-touch
+ignore-empty-password
+show-failed-attempts
+show-keyboard-layout
+
+# takes screenshot and blurs it (below)
+#screenshot
+# set image and blur it.(below)
+image="/opt/wallpaper/current"
+scaling=fill
+font="Hack"
+
+indicator-radius=100
+indicator-thickness=10
+
+# bg-color value if image is not set.
+# default bg-color is #FFFFFF
+color=1f1d2e
+
+# backgrounds (inside areas)
+inside-color=1f1d2e
+#1f1d2e
+inside-ver-color=1f1d2e
+#1f1d2e
+inside-wrong-color=1f1d2e
+#1f1d2e
+inside-clear-color=1f1d2e
+#1f1d2e
+
+# text colors
+text-color=21cc90
+#21cc90
+text-ver-color=cca222
+#cca222
+text-wrong-color=7b002c
+#7b002c = bordeaux
+text-clear-color=e0def4
+#e0def4
+text-caps-lock-color=""
+
+# ring (indicator border)
+ring-color=191724
+#191724
+ring-ver-color=cca222
+#21cc90 #00ccdd #cca222
+ring-wrong-color=7b002c
+#7b002c #31748f
+ring-clear-color=9ccfd8
+#9ccfd8
+
+# line color between inside and ring
+line-color=1f1d2e
+#1f1d2e
+line-ver-color=1f1d2e
+#1f1d2e
+line-wrong-color=1f1d2e
+#1f1d2e
+line-clear-color=1f1d2e
+#1f1d2e
+
+# highlights
+separator-color=00000000
+bs-hl-color=2277cc
+#2277cc
+key-hl-color=21cc90
+#21cc90
+
+# datetime in inside setup
+datestr=%Y-%m-%d %A
+timestr=%H:%M:%S
+
+
+#### Only for swaylock-effects ####
+# always show the indicator
+indicator
+
+# show clock in the indicator
+clock
+
+# graphical effects
+effect-blur=14x7
+effect-vignette=0.4:0.4
+

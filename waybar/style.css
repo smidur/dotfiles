@@ -1,0 +1,512 @@
+/*
+ * ==== https://github.com/smidur ==== 
+*/
+
+@import url("colors-theme.css");
+
+* {
+  min-height: 0;
+  font-size: 14px;
+  font-family: "Hack Nerd Font, RecMonoCasual Nerd Font, Symbols Nerd Font, sans-serif, monospace";
+  font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+  border-radius: 9px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 1px;
+  padding-right: 1px;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+/* 
++++++++ FONT FEATURE SETTINGS +++++++
+  liga: standard ligatures
+  dlig: discretionary ligatures
+  onum: old style figures
+  lnum: lining figures
+  tnum: tabular figures
+  zero: slashed zero
+  frac: fractions
+  sups: superscript
+  subs: subscript
+  smcp: small caps
+  c2sc: small capitals from capitals
+  case: case-sensitive forms
+  hlig: historical ligatures
+  calt: contextual alternates
+  swsh: swashes
+  hist: historical forms
+  ss**: stylistic sets
+  kern: kerning
+  locl: localized forms
+  rlig: required ligatures
+  medi: medial forms
+  init: initial forms
+  isol: isolated forms
+  fina: final forms
+  mark: mark
+  mkmk: mark-to-mark positioning
+*/
+
+window#waybar {
+  margin-right: 0px;
+  margin-left: 0px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: @MediumAquamarine;
+}
+
+/* -------------------------- */
+
+#language {
+  padding-left: 4px;
+  padding-right: 4px;
+  font-weight: bold;
+  color: @VampireBlack;
+  background-color: @Teal;
+  border-radius: 0;
+}
+
+#taskbar button,
+#workspaces button,
+#workspaces button.empty {
+  color: @MediumAquamarine;
+  border-radius: 24%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  border-left: none;
+  border-right: none;
+}
+
+#taskbar button.active,
+#workspaces button.active,
+#workspaces button.persistent {
+  color: @MediumAquamarine;
+  border-radius: 24%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  border-left: none;
+  border-right: none;
+}
+
+#workspaces button.focused,
+#workspaces button.visible {
+  font-weight: bold;
+  color: @MediumAquamarine;
+  opacity: 0.8;
+  border-width: 2px;
+  border-style: solid;
+  border-color: @MediumAquamarine;
+  border-left: none;
+  border-right: none;
+}
+
+#taskbar button:hover,
+#workspaces button:hover {
+  color: @VampireBlack;
+  background-color: @MediumAquamarine;
+  border-width: 2px;
+  border-style: solid;
+  border-color: @MediumAquamarine;
+  border-left: none;
+  border-right: none;
+}
+
+#workspaces button.urgent {
+  font-weight: bold;
+  color: @Urgent;
+  border-radius: 24%;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: @Urgent;
+  border-left: none;
+  border-right: none;
+}
+
+#workspaces button.urgent:hover {
+  color: @WhiteSmoke;
+  font-weight: bold;
+  border-radius: 0;
+  background-color: @Urgent;
+  box-shadow: 0px 0px 4px 2px @Urgent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  border-left: none;
+  border-right: none;
+}
+
+#custom-playerctl {
+  font-family: "Ubuntu Nerd Font";
+  font-weight: bold;
+  font-size: 12px;
+  color: @MediumAquamarine;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-top: 2px solid @MediumAquamarine;
+  border-bottom: 2px solid @MediumAquamarine;
+  border-radius: 14%;
+  opacity: 0.7;
+}
+
+#custom-playerctl:hover {
+  font-weight: bold;
+  color: @WhiteSmoke;
+  background-color: @Cyprus;
+  box-shadow: 0px 0px 9px 7px @Cyprus;
+}
+
+#window {
+  font-size: 13px;
+  color: @MediumAquamarine;
+  opacity: 0.7;
+}
+
+#mode {
+  padding-left: 4px;
+  padding-right: 4px;
+  font-weight: bold;
+  background-color: @RedOrange;
+  color: @VampireBlack;
+  text-shadow: 0px 0px 2px @MediumAquamarine;
+}
+
+/* network.{disconnected,disabled,linked,ethernet,wifi} */
+#network {
+  padding-left: 4px;
+  padding-right: 4px;
+  color: @MediumAquamarine;
+  border-top: 2px solid @MediumAquamarine;
+  border-bottom: 2px solid @MediumAquamarine;
+  border-radius: 14%;
+}
+
+#network.disconnected {
+  font-weight: bold;
+  border-radius: 0;
+  color: @CrimsonRed;
+  border-top: 2px solid @CrimsonRed;
+  border-bottom: 2px solid @CrimsonRed;
+  border-radius: 14%;
+}
+
+/* .{disabled,off,on,connected,discoverable,discovering,pairable} */
+#bluetooth {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#bluetooth.on,
+#bluetooth.connected {
+  font-weight: bold;
+  color: @VampireBlack;
+  background-color: @MediumAquamarine;
+  border-radius: 0%;
+}
+
+#bluetooth.off,
+#bluetooth.disabled {
+  font-weight: bold;
+  color: @CrimsonRed;
+  border-top: 2px solid @CrimsonRed;
+  border-bottom: 2px solid @CrimsonRed;
+  border-radius: 14%;
+}
+
+
+/* IDLE INHIBITOR */
+#idle_inhibitor {
+  padding-left: 4px;
+  padding-right: 7px;
+  color: @JapaneseYellow;
+  text-shadow: 0px 0px 2px @JapaneseYellow;
+}
+
+#idle_inhibitor.activated {
+  padding-left: 4px;
+  padding-right: 7px;
+  border-radius: 0;
+  background-color: @JapaneseYellow;
+  color: @VampireBlack;
+}
+
+#nightlight {
+}
+
+
+/* BACKLIGHT */
+#backlight {
+  color: @MediumAquamarine;
+  padding-right: 2px;
+  margin-left: 0px;
+}
+
+
+/* PULSEAUDIO */
+#pulseaudio {
+  font-weight: bold;
+  color: @GreenYellow;
+}
+
+#pulseaudio.speaker,
+#pulseaudio.bluetooth { 
+  padding-left: 4px;
+  padding-right: 4px;
+  color: @GreenYellow;
+}
+
+#pulseaudio.muted {
+  color: @CrimsonRed;
+  background-color: @VampireBlack;
+}
+
+#pulseaudio.microphone {
+  color: @GreenYellow;
+  background-color: @CrimsonRed;
+}
+
+#pulseaudio.microphone.source-muted {
+  color: @VampireBlack;
+  background-color: @GreenYellow;
+}
+
+
+/* WIREPLUMBER */
+#wireplumber {
+  font-weight: bold;
+  background-color: @DeepJungle;
+  color: @JapaneseYellow;
+}
+
+#wireplumber-muted {
+  color: @CrimsonRed;
+  background-color: @VampireBlack;
+}
+
+
+/* TEMPERATURE */
+#temperature {
+  color: @LightGreen;
+}
+
+#temperature.warning {
+  animation-name: anim-warning;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+#temperature.critical {
+  animation-name: anim-critical;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+/* ---------------------- */
+
+
+#cpu {
+  padding-left: 4px;
+  color: @PersianGreen;
+}
+
+#memory {
+  padding-left: 4px;
+  color: @RoyalBlue;
+}
+
+#disk {
+  padding-left: 4px;
+}
+
+
+/* BATTERY */
+#battery {
+  color: @BitterLime;
+}
+
+#battery.charging {
+  animation-name: anim-charging;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+#battery.warning:not(.charging) {
+  animation-name: anim-warning;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+#battery.critical:not(.charging) {
+  animation-name: anim-critical;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+/* ---------------------- */
+
+#clock {
+  color: @MediumAquamarine;
+  font-weight: bold;
+}
+
+#custom-swaync {
+  padding-left: 2px;
+  padding-right: 4px;
+  color: @MediumAquamarine;
+  text-shadow: 0px 0px 2px @MediumAquamarine;
+}
+
+/* notification, dnd-notification, inhibited-notification, dnd-inhibited-notification, */
+#custom-swaync.dnd-inhibited-notification, 
+#custom-swaync.inhibited-notification, 
+#custom-swaync.dnd-notification, 
+#custom-swaync.notification {
+  padding-left: 2px;
+  padding-right: 4px;
+  border-radius: 24%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: @MediumAquamarine;
+  border-left: none;
+  border-right: none;
+}
+
+#custom-lock {
+  padding-right: 4px;
+  color: @RedOrange;
+}
+
+#custom-power {
+  padding-right: 4px;
+  color: @Red;
+  text-shadow: 0px 0px 2px @Red;
+}
+
+tooltip,
+tooltip label {
+  color: @MediumAquamarine;
+  background-color: @VampireBlack;
+  font-size: 13px;
+  opacity: 0.9;
+  border-radius: 4%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: @VampireBlack;
+  box-shadow: 0px 0px 4px 2px @VampireBlack;
+  text-shadow: 0px 0px 2px @MediumAquamarine;
+}
+
+
+/* ------------------------------------------ */
+#custom-separator {
+  color: transparent;
+  background-color: transparent;
+  margin-top: -2px;
+  margin-bottom: -2px;
+  margin-left: -2px;
+  margin-right: -2px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#custom-sep-sq-open,
+#custom-sep-sq-close {
+  font-weight: bold;
+  border-radius: 0;
+}
+
+#custom-sep-rnd-open,
+#custom-sep-rnd-close {
+  font-weight: bold;
+  border-radius: 29%;
+}
+
+/* ------------------------------------------ */
+
+/* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+/* 
+animation: 3s ease-in 1s 2 reverse both paused slide-in;
+-------OR---------
+animation-name: my_anim;
+animation-duration: 1s;
+animation-direction: alternate;
+animation-timing-function: steps(12); | ease-{in,out,in-out};
+animation-iteration-count: infinite;
+*/
+
+@keyframes anim-hover {
+  from {
+    box-shadow: 0px 0px 0px 0px transparent;
+  }
+  to {
+    color: @WhiteSmoke;
+    font-weight: bold;
+    background-color: @CrimsonRed;
+    box-shadow: 0px 0px 4px 2px @CrimsonRed; 
+  }
+}
+
+@keyframes anim-charging {
+  from {
+    font-weight: bold;
+    color: @Charging;
+    background-color: transparent;
+    box-shadow: 0px 0px 4px transparent;
+  }
+  to {
+    font-weight: bold;
+    color: @VampireBlack;
+    background-color: @Charging;
+    box-shadow: 0px 0px 4px @Charging; 
+  }
+}
+
+@keyframes anim-warning {
+  from {
+    color: @Warning;
+    background-color: @VampireBlack;
+    box-shadow: 0px 0px 0px 0px transparent; 
+  }
+  to {
+    color: @VampireBlack;
+    font-weight: bold;
+    border-radius: 24%;
+    background-color: @Warning;
+    box-shadow: 0px 0px 4px 2px @Warning; 
+  }
+}
+
+@keyframes anim-critical {
+  from {
+    box-shadow: 0px 0px 0px 0px transparent;
+    background-color: @WhiteSmoke;
+    color: @Critical;
+  }
+  to {
+    color: @WhiteSmoke;
+    font-weight: bold;
+    border-radius: 24%;
+    background-color: @Critical;
+    box-shadow: 0px 0px 4px 2px @Critical; 
+  }
+}
+
+
+/* 
+vim: ft=less
+*/
+
