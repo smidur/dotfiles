@@ -197,6 +197,8 @@ window#waybar {
 #bluetooth {
   padding-left: 4px;
   padding-right: 4px;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 #bluetooth.on,
@@ -205,6 +207,8 @@ window#waybar {
   color: @VampireBlack;
   background-color: @MediumAquamarine;
   border-radius: 0%;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 #bluetooth.off,
@@ -248,13 +252,13 @@ window#waybar {
 /* PULSEAUDIO */
 #pulseaudio {
   font-weight: bold;
+  padding-left: 4px;
+  padding-right: 4px;
   color: @GreenYellow;
 }
 
 #pulseaudio.speaker,
 #pulseaudio.bluetooth { 
-  padding-left: 4px;
-  padding-right: 4px;
   color: @GreenYellow;
 }
 
@@ -271,6 +275,7 @@ window#waybar {
 #pulseaudio.microphone.source-muted {
   color: @VampireBlack;
   background-color: @GreenYellow;
+  border-radius: 0%;
 }
 
 
@@ -312,22 +317,30 @@ window#waybar {
 
 #cpu {
   padding-left: 4px;
-  color: @PersianGreen;
+  color: @VampireBlack;
+  background-color: @PersianGreen;
+  border-radius: 0%;
 }
 
 #memory {
   padding-left: 4px;
-  color: @RoyalBlue;
+  color: @VampireBlack;
+  background-color: @RoyalBlue;
+  border-radius: 0%;
 }
 
 #disk {
   padding-left: 4px;
+  background-color: @RedOrange;
+  color: @VampireBlack;
+  border-radius: 0%;
 }
 
 
 /* BATTERY */
 #battery {
   color: @BitterLime;
+  border-radius: 0%;
 }
 
 #battery.charging {
@@ -383,8 +396,11 @@ window#waybar {
 }
 
 #custom-lock {
-  padding-right: 4px;
-  color: @RedOrange;
+  padding-left: 4px;
+  padding-right: 7px;
+  border-radius: 0%;
+  color: @VampireBlack;
+  background-color: @RedOrange;
 }
 
 #custom-power {

@@ -1,5 +1,5 @@
-/* ==== https://github.com/smidur ==== */
 // Groups Modules //
+// vim: ft=jsonc
 
 {
 
@@ -134,7 +134,7 @@
     "drawer": {
       "transition-duration": 400,
       "children-class": "custom/power",
-      "transition-left-to-right": false
+      "transition-left-to-right": true
     },
     "modules": [
       "custom/power",
@@ -174,8 +174,5 @@
     ]
   }
 
+
 }
-
-
-// vim: ft=jsonc
-
