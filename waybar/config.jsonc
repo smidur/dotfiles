@@ -28,7 +28,7 @@
     "modules-left": [
       "custom/separator",
 
-      "sway/language",
+      "idle_inhibitor",
       "custom/separator",
 
       "sway/workspaces",
@@ -48,10 +48,10 @@
       "group/connections",
       "custom/separator",
 
-      "idle_inhibitor",
+      "group/audio",
       "custom/separator",
 
-      "group/audio",
+      "sway/language",
       "custom/separator",
 
       "backlight",
